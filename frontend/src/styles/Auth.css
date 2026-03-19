@@ -1,0 +1,213 @@
+/* ============================================
+   PREMIUM AUTH DESIGN - CLEAN & CENTERED
+   ============================================ */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f6f8fb 0%, #eef2f7 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 28px 26px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+/* Tabs */
+.auth-tabs {
+  display: flex;
+  background: #f1f3f6;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.auth-tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.auth-tab.active {
+  background: #d84e55;
+  color: white;
+}
+
+/* Title */
+.auth-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.auth-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+/* Role Switch */
+.role-switcher {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f3f6;
+  padding: 4px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.role-switcher button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.role-switcher .active {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  color: #d84e55;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #d84e55;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(216,78,85,0.1);
+}
+
+/* Phone */
+.phone-wrapper {
+  display: flex;
+}
+
+.country-code {
+  padding: 10px 12px;
+  background: #f1f3f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 14px;
+}
+
+.phone-wrapper input {
+  border-radius: 0 8px 8px 0;
+}
+
+/* Password wrapper */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Error */
+.error-message {
+  background: #ffecec;
+  color: #d84e55;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Submit */
+.submit-button {
+  padding: 11px;
+  background: #d84e55;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-button:hover {
+  background: #c63d44;
+}
+
+/* Google */
+.google-login-container {
+  margin-top: 14px;
+}
+
+.google-login-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.google-login-btn:hover {
+  background: #f5f5f5;
+}
+
+/* Responsive */
+@media (max-height: 750px) {
+  .auth-container {
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+}
